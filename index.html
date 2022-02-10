@@ -9,14 +9,19 @@
       name="keywords"
       content="web design, web development, website creation, HTML, CSS, JavaScript, React, SEO"
     />
-    <meta name="author" content="SABBATECH" />
-    <!-- FONTAWESOME CDN-->
+    <meta name="author" content="jsDESIGN bootstrap" />
+    <!-- FONT AWESOME -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+    <!-- ANIMATE -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <!-- Bootstrap CSS -->
     <link
@@ -28,16 +33,15 @@
     <!-- MY CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Home | sabbaTECH</title>
+    <title>jsDESIGN | HOME</title>
+    <link rel="icon" href="images/icon.png" />
   </head>
   <body>
     <!-- HEADER -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
-        <div class="container-fluid nav-container">
-          <a class="navbar-brand logo" href="index.html"
-            >sabba<span>TECH</span></a
-          >
+      <nav class="navbar navbar-expand-lg bg-warning navbar-dark">
+        <div class="container-fluid nav-container py-3">
+          <a class="navbar-brand logo" href="index.html">js<span>DESIGN</span></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -57,10 +61,10 @@
                 >
               </li>
               <li class="nav-item ms-auto">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link active" href="#projects">Projects</a>
               </li>
               <li class="nav-item ms-auto">
-                <a class="nav-link active" href="focus.html">Focus</a>
+                <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item ms-auto">
                 <a class="nav-link" href="blog.html">Blog</a>
@@ -78,8 +82,8 @@
     <section class="showcase">
       <div class="container showcase-container">
         <div class="showcase-text">
-          <h1>Design with Results</h1>
-          <p>
+          <h1 class="text-dark">Design with Results</h1>
+          <p class="text-dark text-start fw-light">
             When you want to have a well-designed website, you need to work with
             the best. We’ve accomplished this by offering the very best when it
             comes to web design and have some of the most talented designers in
@@ -88,24 +92,24 @@
             and understand, while also keeping in mind the technicalities that
             will convert site visitors into paying customers.
           </p>
-          <a href="focus.html" class="btn btn-outline-light">Read More</a>
+          <a href="focus.html" class="btn btn-outline-dark">Read More</a>
         </div>
         <div class="card showcase-form">
-          <h2 class="text-dark">Request Demo</h2>
+          <h3 class="text-dark pt-2">Request Demo</h3>
           <form>
             <div class="form-group">
               <input
                 type="text"
                 class="form-control"
-                placeholder="Name"
+                placeholder="#name"
                 required
               />
             </div>
             <div class="form-group">
               <input
-                type="email"
+                type="#email"
                 class="form-control"
-                placeholder="Enter email"
+                placeholder="email"
                 required
               />
             </div>
@@ -113,11 +117,11 @@
               <input
                 type="text"
                 class="form-control"
-                placeholder="Contact number"
+                placeholder="#contact number"
                 required
               />
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-outline-dark m-2">SUBMIT</button>
           </form>
         </div>
       </div>
@@ -126,8 +130,8 @@
     <!-- STATS -->
     <section class="stats">
       <div class="container stats-container">
-        <h4 class="stats-heading">
-          <b>Welcome</b> to the best design company for building applications
+        <h4 class="stats-heading fw-light mx-3 mx-md-1">
+          <span class="fw-bold">Welcome</span> to the best design company for building applications
           <br />
           of all types with modern architecture and scaling
         </h4>
@@ -152,238 +156,279 @@
             <p class="stats-text text-dark">Projects</p>
           </div>
         </div>
-        <div class="arrow-down">
-          <a href="#quote" class="arrow-anchor">
-            <img src="images/down-arrow.png" alt="arrow-down icon"
-          /></a>
+        <div class="arrow-down pt-3">
+          <a href="#projects" class="arrow-anchor">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" style="fill: #ffc107;"><path d="M16.939 10.939 12 15.879l-4.939-4.94-2.122 2.122L12 20.121l7.061-7.06z"></path><path d="M16.939 3.939 12 8.879l-4.939-4.94-2.122 2.122L12 13.121l7.061-7.06z"></path></svg>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- QUOTE BGI-->
-    <section id="quote" class="quote">
-      <div class="container container-sm quote-container">
-        <div class="row quote-image">
-          <blockquote>
-            <small>
-              <q class="q1"
-                >Don’t let the noise of others’ opinions drown out your own
-                inner voice.
-              </q>
-              <br />
-              <q class="q2"
-                >People who are crazy to think that they can change the world
-                are the real ones who do.
-              </q>
-            </small>
-            <br />
-            <em><small>- - Steve Jobs - -</small></em>
-          </blockquote>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS DISPLAY -->
-    <section class="projects">
-      <h3>Some Projects</h3>
-      <hr class="my-hr" />
-      <p class="text-dark">Check out a few of our web design projects below:</p>
-      <div class="container">
-        <div class="card">
-          <h6>ContaNium</h6>
-          <img src="images/portfolio1.jpg" alt="" />
-        </div>
-        <div class="card">
-          <h6>DataEnt</h6>
-          <img src="images/portfolio2.jpg" alt="" />
-        </div>
-        <div class="card">
-          <h6>CiviWork</h6>
-          <img src="images/portfolio3.jpg" alt="" />
-        </div>
-        <div class="card">
-          <h6>RubyInt</h6>
-          <img src="images/portfolio4.jpg" alt="" />
-        </div>
-        <div class="card">
-          <h6>HaloCom</h6>
-          <img src="images/portfolio5.jpg" alt="" />
-        </div>
-        <div class="card">
-          <h6>HightStrt</h6>
-          <img src="images/portfolio6.jpg" alt="" />
-        </div>
-        <div class="card">
-          <h6>ClojSock</h6>
-          <img src="images/portfolio7.jpg" alt="" />
-        </div>
-        <div class="card">
-          <h6>DaliSoup</h6>
-          <img src="images/portfolio8.jpg" alt="" />
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="testimonial">
-      <h3>Some Testimonials</h3>
-      <hr class="my-hr" />
-      <p class="text-dark">Listen to what some of our clients have to say:</p>
-      <div class="container">
-        <div class="card">
-          <img src="images/person1.jpg" alt="person profile" />
-          <div class="profile">
-            <h6>John Doe</h6>
-            <p>
-              They listened to my needs, and were prompt to respond to all of my
-              needs.
-              <br />
-              <span>
-                <em><small>- Managing Director</small></em>
-              </span>
-              <br />
-              <code class="code">Grando, Wholesale.</code><br />
-              <span class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </span>
-            </p>
+    <!-- PROJECTS -->
+    <section id="projects" class="projects pt-5">    
+      <div class="container card-container py-5 my-5">
+        <h2 class="text-dark text-center pt-3">Our Projects</h2>
+        <hr class="my-hr mb-4" />
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <a href="#"><img src="images/portfolio1.jpg" class="card-img-top" alt="project-image"></a>              
+              <div class="card-body">
+                <h5 class="card-title">ContaNium</h5>
+                <hr>
+                <p class="card-text text-start fw-light">Some quick example text to build on the card title.</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="images/person2.jpg" alt="person profile" />
-          <div class="profile">
-            <h6>Jane Fonda</h6>
-            <p>
-              Professional and Creative, Attentive to Detail, Excellent
-              Communication.
-              <br />
-              <span>
-                <em><small>- Managing Director</small></em>
-              </span>
-              <br />
-              <code class="code">Superiors, Mgmt.</code><br />
-              <span class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </span>
-            </p>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <a href="#"><img src="images/portfolio2.jpg" class="card-img-top" alt="project-image"></a>              
+              <div class="card-body">
+                <h5 class="card-title">DataEntry</h5>
+                <hr>
+                <p class="card-text text-start fw-light">Some quick example text to build on the card title.</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="images/person3.jpg" alt="person profile" />
-          <div class="profile">
-            <h6>Sam Zorinka</h6>
-            <p>
-              Kudos to the sabbaTECH folks for making it happen. Strongly
-              recommend!
-              <br />
-              <span>
-                <em><small>- CEO, Founder</small></em>
-              </span>
-              <br />
-              <code class="code">Strolling Logistics, Inc.</code><br />
-              <span class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </span>
-            </p>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <a href="#"><img src="images/portfolio3.jpg" class="card-img-top" alt="project-image"></a>              
+              <div class="card-body">
+                <h5 class="card-title">CivilWork</h5>
+                <hr>
+                <p class="card-text text-start fw-light">Some quick example text to build on the card title.</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <img src="images/person4.jpg" alt="person profile" />
-          <div class="profile">
-            <h6>James Ramsey</h6>
-            <p>
-              I should've contracted with sabbaTECH right from the first time.
-              Thankyou!
-              <br />
-              <span>
-                <em><small>- Sales Manager</small></em>
-              </span>
-              <br />
-              <code class="code">Landscaping Inc.</code><br />
-              <span class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </span>
-            </p>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <a href=""><img src="images/portfolio4.jpg" class="card-img-top" alt="project-image"></a>              
+              <div class="card-body">
+                <h5 class="card-title">DesignRuby</h5>
+                <hr>
+                <p class="card-text text-start fw-light">Some quick example text to build on the card title.</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <section class="footer">
-      <div class="container footer-container">
-        <div class="row footer-row">
-          <div class="footer1">
-            <h3>sabba<span>TECH</span></h3>
-            <p>
-              <small>Marunouchi square, Tokyo</small><br />
-              <small>Call: +81 3123456789</small><br />
-              <small>Email: info@sabatech.com</small>
-            </p>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <a href="#"><img src="images/portfolio5.jpg" class="card-img-top" alt="project-image"></a>              
+              <div class="card-body">
+                <h5 class="card-title">HaloCom</h5>
+                <hr>
+                <p class="card-text text-start fw-light">Some quick example text to build on the card title.</p>
+              </div>
+            </div>
           </div>
-          <hr class="mb-3" />
-          <div class="footer2">
-            <h4>LET'S CONNECT</h4>
-            <p class="my-2 text-light">
-              <small>Get our top stories now:</small>
-            </p>
-            <div class="wrapper">
-              <input type="text" placeholder="enter email address:" />
-              <a href="contact.html">
-                <button type="button" class="btn btn-outline-light btn-sm">
-                  SUBSCRIBE
-                </button>
-              </a>
-              <div class="wrapper-two">
-                <a href="https://www.facebook.com" target="_blank"
-                  ><span
-                    ><i
-                      class="fab fa-facebook-square fa-2x text-light"
-                    ></i></span
-                ></a>
-                <a href="https://www.twitter.com" target="_blank"
-                  ><span
-                    ><i
-                      class="fab fa-twitter-square fa-2x text-light"
-                    ></i></span
-                ></a>
-                <a href="https://www.instagram.com" target="_blank"
-                  ><span
-                    ><i
-                      class="fab fa-instagram-square fa-2x text-light"
-                    ></i></span
-                ></a>
-                <a href="https://www.linkedin.com" target="_blank"
-                  ><span><i class="fab fa-linkedin fa-2x text-light"></i></span
-                ></a>
-                <a href="https://www.youtube.com" target="_blank"
-                  ><span
-                    ><i
-                      class="fab fa-youtube-square fa-2x text-light"
-                    ></i></span
-                ></a>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <a href="#"><img src="images/portfolio6.jpg" class="card-img-top" alt="project-image"></a>              
+              <div class="card-body">
+                <h5 class="card-title">ShopStreet</h5>
+                <hr>
+                <p class="card-text text-start fw-light">Some quick example text to build on the card title.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <a href="#"><img src="images/portfolio7.jpg" class="card-img-top" alt="project-image"></a>              
+              <div class="card-body">
+                <h5 class="card-title">CozySock</h5>
+                <hr>
+                <p class="card-text text-start fw-light">Some quick example text to build on the card title.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card">
+              <a href="#"><img src="images/portfolio8.jpg" class="card-img-top" alt="project-image"></a>              
+              <div class="card-body">
+                <h5 class="card-title">DeliSoup</h5>
+                <hr>
+                <p class="card-text text-start fw-light">Some quick example text to build on the card title.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonial">
+      <h3 class="pt-3 text-center">Testimonials</h3>
+      <hr class="my-hr" />
+      <p class="text-dark text-center">
+        Listen to what some of our clients have to say:
+      </p>
+      <div class="wrapper testimonial-section">
+        <div class="container text-center">          
+          <div class="row">
+            <div class="col-sm-12 col-lg-10 offset-lg-1">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="carousel-caption">
+                      <img src="images/person1.jpg" />
+                      <h6 class="text-dark fw-bolder pt-3">John Owen</h6>
+                      <p class="text-secondary fw-light"><small>
+                        "JSDesign listened to my needs, and were prompt to respond to all
+                        of my needs".</small>
+                        <br />
+                        <span>
+                          <em><small>Managing Director</small></em>
+                        </span>
+                        <br />
+                        <code class="code text-dark">Grando, Wholesale.</code
+                        ><br />
+                        <span class="stars text-warning">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption">
+                      <img src="images/person2.jpg" />
+                      <h6 class="text-dark fw-bolder pt-3">Lucy Fonda</h6>
+                      <p class="text-secondary"><small>
+                        "Professional and Creative, Attentive to Detail, Swift,
+                        Excellent communication".</small>
+                        <br />
+                        <span>
+                          <em><small>PR Media</small></em>
+                        </span>
+                        <br />
+                        <code class="code text-dark">Superiors, Mgmt.</code><br />
+                        <span class="stars text-warning">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption">
+                      <img src="images/person3.jpg" />
+                      <h6 class="text-dark fw-bolder pt-3">Taro Suzuki</h6>
+                      <p class="text-secondary"><small>
+                        "Kudos to the JSDesign folks for making it happen. Strongly
+                        recommend!"</small>
+                        <br />
+                        <span>
+                          <em><small>CEO, Founder</small></em>
+                        </span>
+                        <br />
+                        <code class="code text-dark">Stroll, Inc.</code><br />
+                        <span class="stars text-warning">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </span>
+                      </p>                    
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption">
+                      <img src="images/person4.jpg" />
+                      <h6 class="text-dark fw-bolder pt-3">James Ramsey</h6>
+                      <p class="text-secondary"><small>
+                        "I should've contracted with JSDesign right from the first
+                        time. Thankyou!"</small>
+                        <br />
+                        <span>
+                          <em><small>Sales Manager</small></em>
+                        </span>
+                        <br />
+                        <code class="code text-dark">Landscaping Inc.</code><br />
+                        <span class="stars text-warning">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </span>
+                      </p>                    
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" style="fill: #ffc107";><path d="m8.121 12 4.94-4.939-2.122-2.122L3.879 12l7.06 7.061 2.122-2.122z"></path><path d="M17.939 4.939 10.879 12l7.06 7.061 2.122-2.122L15.121 12l4.94-4.939z"></path></svg>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" style="fill: #ffc107";><path d="m13.061 4.939-2.122 2.122L15.879 12l-4.94 4.939 2.122 2.122L20.121 12z"></path><path d="M6.061 19.061 13.121 12l-7.06-7.061-2.122 2.122L8.879 12l-4.94 4.939z"></path></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container-fluid footer-container bg-dark pt-4">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="footer1">
+                <h4 class="text-center text-white pb-2 fw-light">js<span class="text-warning">DESIGN</span></h4>
+                <p class="text-center social-icons">
+                  <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook-f fs-5 text-light px-2 px-md-3"></i></a>
+                  <a href="https://www.twitter.com" target="_blank"
+                    ><i class="fab fa-twitter fs-5 text-light px-2 px-md-3"></i></a>
+                  <a href="https://www.instagram.com" target="_blank"
+                    ><i class="fab fa-instagram fs-5 text-light px-2 px-md-3"></i></a>
+                  <a href="https://www.linkedin.com" target="_blank"
+                    ><i class="fab fa-linkedin-in fs-5 text-light px-2 px-md-3"></i><a>
+                  <a href="https://www.youtube.com" target="_blank"
+                  ><i class="fab fa-youtube fs-5 text-light px-2 px-md-3"></i></a>
+                </p>
+                <p class="text-center text-white fw-light mb-4"><small>Contact: 0120-123-4567</small></p>
+              </div>
+            </div>
+  
+            <hr class="d-block d-md-none mb-4" />
+  
+            <div class="col-12 col-lg-6 connect">
+                <h4 class="text-center text-white fw-light">LET'S <span class="text-warning">CONNECT</span></h4>
+                <p class="my-2 text-light">
+                </p>
+                    <div class="text-center d-flex flex-column my-2 mb-3 d-lg-block">
+                    <input type="text" class="mx-auto p-md-1" placeholder="#email">
+                    <a href="contact.html">
+                      <button type="button" class="btn btn-outline-warning mt-2 mt-lg-0">
+                        SUBSCRIBE
+                      </button>
+                    </a>
+                  </div>
+                  <a href="#" class="text-center text-white"><p><small>Take me back to the TOP</small> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #ffc107;"><path d="M6 4h12v2H6zm.707 11.707L11 11.414V20h2v-8.586l4.293 4.293 1.414-1.414L12 7.586l-6.707 6.707z"></path></svg>
+                  </p></a>
+            </div>            
+          </div>
+        </div>
+        <div class="container-fluid footer-bottom">
+          <div class="row">
+            <div class="col-12 bg-dark text-muted text-center pb-2">
+                <small class="text-bottom">copyright &copy;jsDESIGN | 2022</small>
+            </div>           
+          </div>
+        </div>
+      </footer>
 
     <!-- Bootstrap JAVASCRIPT -->
     <script
